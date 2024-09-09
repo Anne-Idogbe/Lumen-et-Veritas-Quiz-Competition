@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Competition Registration & Login</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500">
+    <div class="container mx-auto p-8 mt-10 max-w-lg">
+
+        <div class="flex gap-3">
+            <img style=" width: 70px; height: 70px;" src="./images/school logo.jpg" />
+            <h1 class="text-center text-3xl font-bold mb-8 text-white">Lumen et Veritas Quiz Competition</h1>
+
+        </div>
+        <!-- Registration Deadline Countdown -->
+        <div id="deadline-section" class="mb-8 text-center bg-white p-6 rounded-lg shadow-md">
+            <diV class="text-center text-3xl font-bold  text-red-600">
+                <h1 class="text-center text-3xl font-bold">Registration Deadline is 1st October,2024</h1>
+                <p class="text-center text-3xl font-bold ">Schools must pay a fine N5000 fine to register after Deadline</p>
+            </diV>
+            <h2 id="registration-status" class="text-2xl font-semibold">Registration closes in:</h2>
+            <div id="countdown" class="text-xl font-medium mt-2 text-gray-700"></div>
+            <p id="fine-message" class="text-red-500 mt-4 hidden">The registration deadline has passed. Schools must pay a $5000 fine to register.</p>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="registration-form" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-blue-500">Register Your School</h2>
+            <form id="register-school" class="space-y-4">
+                <div>
+                    <label for="school-name" class="block text-lg font-medium">School Name:</label>
+                    <input type="text" id="school-name" class="w-full border border-gray-300 p-2 rounded-md">
+                    <p id="school-name-error" class="text-red-500 hidden">School Name cannot be empty.</p>
+                </div>
+                <div>
+                    <label for="email" class="block text-lg font-medium">Email:</label>
+                    <input type="email" id="email"  class="w-full border border-gray-300 p-2 rounded-md">
+                    <p id="email-error" class="text-red-500 hidden ">Email cannot be empty.</p>
+                </div>
+                <div>
+                    <label for="password" class="block text-lg font-medium">Password:</label>
+                    <input type="password" id="password" class="w-full border border-gray-300 p-2 rounded-md">
+                    <p id="password-error" class="text-red-500 hidden">Password cannot be empty.</p>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-md font-medium">Register</button>
+                <p>Registered Already? login for the quiz</p>
+            </form>
+            <a href="Login.html">
+                <button type=""
+                class="w-full bg-green-500 hover:bg-blue-600 text-white p-2 rounded-md font-medium ">Login</button>
+            </a>
+        </div>
+
+    
+    </div>
+
+    <script src="Reg.js"></script>
+</body>
+</html>

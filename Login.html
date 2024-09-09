@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Competition Registration & Login</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500">
+    <div class="container mx-auto p-8 mt-10 max-w-lg">
+
+       <div class="flex gap-3">
+          <img style=" width: 70px; height: 70px;" src="./images/school logo.jpg" />
+          <h1 class="text-center text-4xl font-bold mb-8 text-white">Lumen et Veritas Quiz Competition</h1>
+       </div>
+
+        <h2 class="text-xl font-bold mb-4 text-white text-center">Login for Quiz Competition</h2>
+        
+        
+        <!-- Registration Deadline Countdown -->
+        <!-- <div id="deadline-section" class="mb-8 text-center bg-white p-6 rounded-lg shadow-md">
+            <h2 id="registration-status" class="text-2xl font-semibold">Registration closes in:</h2>
+            <div id="countdown" class="text-xl font-medium mt-2 text-gray-700"></div>
+            <p id="fine-message" class="text-red-500 mt-4 hidden">The registration deadline has passed. Schools must pay a $5000 fine to register.</p>
+        </div>
+ -->
+
+        <!-- Login Form -->
+        <div id="login-form" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div id="noni" class="hidden">
+                <p class="text-red-500  ">Username or Password is incorrect</p>
+                
+            </div>
+            <h2 class="text-3xl font-bold mb-4 text-purple-500 text-center">School Login</h2>
+            <form id="login-school" class="space-y-4">
+                <div>
+                    <label for="login-email" class="block text-lg font-medium">Email:</label>
+                    <input type="email" id="login-email" class="w-full border border-gray-300 p-2 rounded-md">
+                    <p id="login-email-error" class="text-red-500 mt-4 hidden">Email cannot be empty.</p>
+                </div>
+                <div>
+                    <label for="login-password" class="block text-lg font-medium">Password:</label>
+                    <input type="password" id="login-password" class="w-full border border-gray-300 p-2 rounded-md">
+                    <p id="login-password-error" class="text-red-500 mt-4 hidden">Password cannot be empty.</p>
+                </div>
+                
+                <button type="submit" class="w-full bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-md font-medium mt-4">Login</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="Log.js"></script>
+</body>
+</html>
